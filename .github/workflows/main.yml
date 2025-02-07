@@ -44,6 +44,8 @@ jobs:
       - name: Upload packages
         uses: ncipollo/release-action@v1
         with:
+          name: test
+          tag: v1.0.0
           token: ${{ secrets.GITHUB_TOKEN }}
           allowUpdates: true
           replacesArtifacts: true
